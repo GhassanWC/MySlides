@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans antialiased text-gray-900 bg-gray-50;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Slide animation presets */
+.slide-card.slide-anim-fadeIn {
+  animation: slideFadeIn 0.6s ease-out forwards;
+}
+.slide-card.slide-anim-titleThenBullets {
+  animation: slideFadeIn 0.4s ease-out forwards;
+}
+.slide-card.slide-anim-titleThenBullets ul li {
+  opacity: 0;
+  animation: slideFadeIn 0.35s ease-out forwards;
+}
+.slide-card.slide-anim-titleThenBullets ul li:nth-child(1) { animation-delay: 0.5s; }
+.slide-card.slide-anim-titleThenBullets ul li:nth-child(2) { animation-delay: 0.7s; }
+.slide-card.slide-anim-titleThenBullets ul li:nth-child(3) { animation-delay: 0.9s; }
+.slide-card.slide-anim-titleThenBullets ul li:nth-child(4) { animation-delay: 1.1s; }
+.slide-card.slide-anim-titleThenBullets ul li:nth-child(5) { animation-delay: 1.3s; }
+.slide-card.slide-anim-slideFromRight {
+  animation: slideFromRight 0.5s ease-out forwards;
+}
+.slide-card.slide-anim-scaleIn {
+  animation: slideScaleIn 0.45s ease-out forwards;
+}
+
+@keyframes slideFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Professional web-style slide (Genspark-like) */
+.slide-card {
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+/* Accent strip at top for web-page feel */
+.slide-card.slide-pro-web {
+  position: relative;
+  overflow: hidden;
+}
+.slide-accent-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 16px 16px 0 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Modern slide design - genspark-style background shapes (accent-colored) */
+.slide-modern-bg {
+  position: relative;
+  overflow: hidden;
+}
+.slide-modern-bg::before,
+.slide-modern-bg::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+/* Use CSS variables so PresentView can inject accent; fallback to rich default */
+.slide-modern-bg::before {
+  width: min(55vw, 420px);
+  height: min(55vw, 420px);
+  background: linear-gradient(135deg, var(--slide-accent, #6366f1) 0%, var(--slide-accent-muted, #818cf8) 100%);
+  opacity: 0.12;
+  top: -12%;
+  left: -8%;
+}
+.slide-modern-bg::after {
+  width: min(40vw, 300px);
+  height: min(40vw, 300px);
+  background: linear-gradient(135deg, var(--slide-accent, #6366f1) 0%, var(--slide-accent-muted, #a5b4fc) 100%);
+  opacity: 0.08;
+  bottom: -8%;
+  right: -5%;
+}
+
+/* Title styling for hero/section feel */
+.slide-card .slide-hero-title {
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+.slide-card .slide-section-title {
+  letter-spacing: -0.015em;
+  font-weight: 700;
+}

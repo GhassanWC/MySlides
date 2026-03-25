@@ -1,0 +1,36 @@
+---
+description: MySlides Slide Design Schema (DSL) - AI agent must follow this structure
+globs: functions/**/*.ts, client/src/**/*.ts
+alwaysApply: false
+---
+
+# MySlides Slide Design Schema
+
+The AI generates slides in strict JSON. The frontend renders it. AI generates structure; the system guarantees beauty.
+
+## Layouts (7)
+- `title-only` - Opening, section headers, closing
+- `title-content` - Standard content
+- `two-column` - Compare/contrast, dual lists
+- `text-cards` - Genspark-style: left=title+subtitle+body, right=4 numbered cards (content[0]=subtitle, [1]=body, [2..5]=cards)
+- `section-header` - Section dividers
+- `quote` - Quotes, testimonials
+- `image-left` - Content left, image right (uses imageUrl)
+
+## Animations
+`none` | `fadeIn` | `titleThenBullets` | `slideFromRight` | `scaleIn`
+
+## Background Styles
+- `solid` - Clean content slides
+- `gradient` - Requires `bgGradient` (CSS string)
+- `image` - Requires `imagePrompt` (DALL-E generates)
+
+## Schema Location
+- `functions/src/slideDesignSchema.ts` - Canonical schema
+- `client/src/types/presentation.ts` - Client types
+
+## Rules
+- No two consecutive slides use the same layout
+- Max 6 bullets per slide
+- Theme: primaryColor, secondaryColor, fontTitle, fontBody, backgroundStyle
+- Modern design: Use SlideChrome (header/footer), slide-modern-bg for subtle circles

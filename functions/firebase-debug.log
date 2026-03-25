@@ -1,0 +1,751 @@
+[debug] [2026-03-16T19:11:37.405Z] ----------------------------------------------------------------------
+[debug] [2026-03-16T19:11:37.407Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2026-03-16T19:11:37.408Z] CLI Version:   14.27.0
+[debug] [2026-03-16T19:11:37.408Z] Platform:      win32
+[debug] [2026-03-16T19:11:37.408Z] Node Version:  v22.17.0
+[debug] [2026-03-16T19:11:37.408Z] Time:          Mon Mar 16 2026 23:11:37 GMT+0400 (Gulf Standard Time)
+[debug] [2026-03-16T19:11:37.408Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-16T19:11:37.656Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-16T19:11:37.656Z] > authorizing via signed-in user (ghassanwork29@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2026-03-16T19:11:37.666Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-03-16T19:11:37.667Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-03-16T19:11:37.671Z] Emulator locator file path: C:\Users\HP\AppData\Local\Temp\hub-myslides-db0c5.json
+[debug] [2026-03-16T19:11:37.671Z] [hub] writing locator at C:\Users\HP\AppData\Local\Temp\hub-myslides-db0c5.json
+[debug] [2026-03-16T19:11:37.693Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-03-16T19:11:37.694Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-03-16T19:11:37.694Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-03-16T19:11:37.694Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2026-03-16T19:11:37.722Z] defaultcredentials: writing to file C:\Users\HP\AppData\Roaming\firebase\ghassanwork29_gmail_com_application_default_credentials.json
+[debug] [2026-03-16T19:11:37.723Z] Setting GAC to C:\Users\HP\AppData\Roaming\firebase\ghassanwork29_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\HP\\AppData\\Roaming\\firebase\\ghassanwork29_gmail_com_application_default_credentials.json"}}
+[debug] [2026-03-16T19:11:37.724Z] Checked if tokens are valid: false, expires at: 1772887466297
+[debug] [2026-03-16T19:11:37.724Z] Checked if tokens are valid: false, expires at: 1772887466297
+[debug] [2026-03-16T19:11:37.724Z] > refreshing access token with scopes: []
+[debug] [2026-03-16T19:11:37.726Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-03-16T19:11:37.726Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-16T19:11:38.312Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-03-16T19:11:38.312Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-16T19:11:38.319Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/myslides-db0c5/adminSdkConfig [none]
+[debug] [2026-03-16T19:11:39.334Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/myslides-db0c5/adminSdkConfig 200
+[debug] [2026-03-16T19:11:39.334Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/myslides-db0c5/adminSdkConfig {"projectId":"myslides-db0c5","storageBucket":"myslides-db0c5.firebasestorage.app"}
+[info] i  functions: Watching "C:\Users\HP\Desktop\MySlides\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\HP\\Desktop\\MySlides\\functions\" for Cloud Functions..."}}
+[debug] [2026-03-16T19:11:39.362Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-03-16T19:11:40.840Z] > [functions] package.json contents: {
+  "name": "myslides-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^11.11.1",
+    "firebase-functions": "^4.5.0",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/node-fetch": "^2.6.10",
+    "typescript": "^5.3.3"
+  }
+}
+[debug] [2026-03-16T19:11:40.841Z] Building nodejs source
+[debug] [2026-03-16T19:11:40.841Z] Failed to find version of module node: reached end of search path C:\Users\HP\Desktop\MySlides\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "22". Using node@22 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: You are using a version of firebase-functions SDK (4.9.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2026-03-16T19:11:40.845Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-03-16T19:11:40.851Z] Found firebase-functions binary at 'C:\Users\HP\Desktop\MySlides\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8366
+
+[debug] [2026-03-16T19:11:41.798Z] Got response from /__/functions.yaml {"endpoints":{"generateSlides":{"platform":"gcfv1","labels":{},"availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"callableTrigger":{},"entryPoint":"generateSlides"},"generateSlidesHttp":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"httpsTrigger":{},"entryPoint":"generateSlidesHttp"},"editSlidesHttp":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"httpsTrigger":{},"entryPoint":"editSlidesHttp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: generateSlides, generateSlidesHttp, editSlidesHttp. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generateSlides, generateSlidesHttp, editSlidesHttp."}}
+[info] +  functions[us-central1-generateSlides]: http function initialized (http://127.0.0.1:5001/myslides-db0c5/us-central1/generateSlides). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/myslides-db0c5/us-central1/generateSlides)."}}
+[info] +  functions[us-central1-generateSlidesHttp]: http function initialized (http://127.0.0.1:5001/myslides-db0c5/us-central1/generateSlidesHttp). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/myslides-db0c5/us-central1/generateSlidesHttp)."}}
+[info] +  functions[us-central1-editSlidesHttp]: http function initialized (http://127.0.0.1:5001/myslides-db0c5/us-central1/editSlidesHttp). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/myslides-db0c5/us-central1/editSlidesHttp)."}}
+[debug] [2026-03-16T19:11:45.873Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2026-03-16T19:13:15.240Z] [work-queue] {"queuedWork":["/myslides-db0c5/us-central1/editSlidesHttp-2026-03-16T19:13:15.240Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-16T19:13:15.241Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/myslides-db0c5/us-central1/editSlidesHttp-2026-03-16T19:13:15.240Z"],"workRunningCount":1}
+[debug] [2026-03-16T19:13:15.241Z] Accepted request OPTIONS /myslides-db0c5/us-central1/editSlidesHttp --> us-central1-editSlidesHttp
+[debug] [2026-03-16T19:13:15.243Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-03-16T19:13:15.244Z] [functions] Got req.url=/myslides-db0c5/us-central1/editSlidesHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/myslides-db0c5/us-central1/editSlidesHttp, mapping to path=/"}}
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: Trying to access secret OPENAI_API_KEY@latest {"metadata":{"emulator":{"name":"functions"},"message":"Trying to access secret OPENAI_API_KEY@latest"}}
+[debug] [2026-03-16T19:13:15.247Z] Checked if tokens are valid: true, expires at: 1773691897313
+[debug] [2026-03-16T19:13:15.247Z] Checked if tokens are valid: true, expires at: 1773691897313
+[debug] [2026-03-16T19:13:15.247Z] >>> [apiv2][query] GET https://secretmanager.googleapis.com/v1/projects/myslides-db0c5/secrets/OPENAI_API_KEY/versions/latest:access [none]
+[debug] [2026-03-16T19:13:16.891Z] <<< [apiv2][status] GET https://secretmanager.googleapis.com/v1/projects/myslides-db0c5/secrets/OPENAI_API_KEY/versions/latest:access 200
+[debug] [2026-03-16T19:13:16.891Z] <<< [apiv2][body] GET https://secretmanager.googleapis.com/v1/projects/myslides-db0c5/secrets/OPENAI_API_KEY/versions/latest:access {"name":"projects/476005135868/secrets/OPENAI_API_KEY/versions/2","payload":{"data":"c2stc3ZjYWNjdC1HTHlNWkhTdTVsaXoxZFVDWXlYcGVDTldrckVmYUhTVkgxWS1RcmFkZGtyUnJHRE9Pb3JVZTNFOWhWaHduMWV1MkNMcE0wWklwNlQzQmxia0ZKYXhQdjNyNEZ2MXhJcG9PY0tqUUJqZ21TaXVPTVVHQnZ3OU54TW5FZmI3VGhxblFzeXBmdjNiNHVnQW9qaFQzc3VEazhYSE9QSUE=","dataCrc32c":"620410149"}}
+[debug] [2026-03-16T19:13:16.903Z] [worker-pool] addWorker(us-central1-editSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-editSlidesHttp)"}}
+[debug] [2026-03-16T19:13:16.904Z] [worker-pool] Adding worker with key us-central1-editSlidesHttp, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-editSlidesHttp, total=1"}}
+[debug] [2026-03-16T19:13:18.185Z] [runtime-status] [5144] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [5144] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2026-03-16T19:13:18.186Z] [runtime-status] [5144] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [5144] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2026-03-16T19:13:18.186Z] [runtime-status] [5144] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [5144] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2026-03-16T19:13:18.187Z] [runtime-status] [5144] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [5144] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2026-03-16T19:13:18.503Z] [runtime-status] [5144] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [5144] Checked functions.config() {\"config\":{}}"}}
+[debug] [2026-03-16T19:13:18.503Z] [runtime-status] [5144] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [5144] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2026-03-16T19:13:18.504Z] [runtime-status] [5144] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [5144] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2026-03-16T19:13:18.505Z] [runtime-status] [5144] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [5144] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2026-03-16T19:13:18.508Z] [runtime-status] [5144] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [5144] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2026-03-16T19:13:18.508Z] [runtime-status] [5144] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [5144] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2026-03-16T19:13:18.626Z] [runtime-status] [5144] initializeApp(DEFAULT) {"storageBucket":"myslides-db0c5.firebasestorage.app","projectId":"myslides-db0c5"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [5144] initializeApp(DEFAULT) {\"storageBucket\":\"myslides-db0c5.firebasestorage.app\",\"projectId\":\"myslides-db0c5\"}"}}
+[debug] [2026-03-16T19:13:18.633Z] [runtime-status] [5144] Functions runtime initialized. {"cwd":"C:\\Users\\HP\\Desktop\\MySlides\\functions","node_version":"22.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [5144] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\",\"node_version\":\"22.17.0\"}"}}
+[debug] [2026-03-16T19:13:18.634Z] [runtime-status] [5144] Listening to port: \\?\pipe\fire_emu_a5fa6d1a87184e77 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [5144] Listening to port: \\\\?\\pipe\\fire_emu_a5fa6d1a87184e77"}}
+[debug] [2026-03-16T19:13:18.655Z] [worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: IDLE"}}
+[debug] [2026-03-16T19:13:18.655Z] [worker-pool] submitRequest(triggerId=us-central1-editSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-editSlidesHttp)"}}
+[info] i  functions: Beginning execution of "us-central1-editSlidesHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Beginning execution of \"us-central1-editSlidesHttp\""}}
+[debug] [2026-03-16T19:13:18.655Z] [worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: BUSY"}}
+[debug] [2026-03-16T19:13:18.659Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-editSlidesHttp" in 3.7552ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finished \"us-central1-editSlidesHttp\" in 3.7552ms"}}
+[debug] [2026-03-16T19:13:18.660Z] [worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: IDLE"}}
+[debug] [2026-03-16T19:13:18.660Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-03-16T19:13:18.660Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-03-16T19:13:18.660Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-16T19:13:18.661Z] [work-queue] {"queuedWork":["/myslides-db0c5/us-central1/editSlidesHttp-2026-03-16T19:13:18.661Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-16T19:13:18.661Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/myslides-db0c5/us-central1/editSlidesHttp-2026-03-16T19:13:18.661Z"],"workRunningCount":1}
+[debug] [2026-03-16T19:13:18.661Z] Accepted request POST /myslides-db0c5/us-central1/editSlidesHttp --> us-central1-editSlidesHttp
+[debug] [2026-03-16T19:13:18.662Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-03-16T19:13:18.662Z] [functions] Got req.url=/myslides-db0c5/us-central1/editSlidesHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/myslides-db0c5/us-central1/editSlidesHttp, mapping to path=/"}}
+[debug] [2026-03-16T19:13:18.662Z] [worker-pool] submitRequest(triggerId=us-central1-editSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-editSlidesHttp)"}}
+[info] i  functions: Beginning execution of "us-central1-editSlidesHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Beginning execution of \"us-central1-editSlidesHttp\""}}
+[debug] [2026-03-16T19:13:18.662Z] [worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: BUSY"}}
+[warn] !  functions: The Firebase Authentication emulator is not running, so calls to Firebase Authentication will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"The Firebase Authentication emulator is not running, so calls to Firebase Authentication will affect production."}}
+[info] >  Starting slide editing using model: gpt-4o-mini {"user":"Starting slide editing using model: gpt-4o-mini","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m Starting slide editing using model: gpt-4o-mini"}}
+[warn] !  External network resource requested!
+   - URL: "https://api.openai.com/v1/chat/completions"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://api.openai.com/v1/chat/completions\"\n - Be careful, this may be a production service."}}
+[debug] [2026-03-16T19:14:05.394Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-editSlidesHttp" in 46732.0615ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finished \"us-central1-editSlidesHttp\" in 46732.0615ms"}}
+[debug] [2026-03-16T19:14:05.395Z] [worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: IDLE"}}
+[debug] [2026-03-16T19:14:05.395Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-03-16T19:14:05.395Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-03-16T19:14:05.395Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-16T19:16:43.051Z] [work-queue] {"queuedWork":["/myslides-db0c5/us-central1/editSlidesHttp-2026-03-16T19:16:43.050Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-16T19:16:43.051Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/myslides-db0c5/us-central1/editSlidesHttp-2026-03-16T19:16:43.050Z"],"workRunningCount":1}
+[debug] [2026-03-16T19:16:43.051Z] Accepted request OPTIONS /myslides-db0c5/us-central1/editSlidesHttp --> us-central1-editSlidesHttp
+[debug] [2026-03-16T19:16:43.054Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-03-16T19:16:43.054Z] [functions] Got req.url=/myslides-db0c5/us-central1/editSlidesHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/myslides-db0c5/us-central1/editSlidesHttp, mapping to path=/"}}
+[debug] [2026-03-16T19:16:43.054Z] [worker-pool] submitRequest(triggerId=us-central1-editSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-editSlidesHttp)"}}
+[info] i  functions: Beginning execution of "us-central1-editSlidesHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Beginning execution of \"us-central1-editSlidesHttp\""}}
+[debug] [2026-03-16T19:16:43.055Z] [worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: BUSY"}}
+[debug] [2026-03-16T19:16:43.057Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-editSlidesHttp" in 2.3257ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finished \"us-central1-editSlidesHttp\" in 2.3257ms"}}
+[debug] [2026-03-16T19:16:43.059Z] [worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: IDLE"}}
+[debug] [2026-03-16T19:16:43.059Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-03-16T19:16:43.059Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-03-16T19:16:43.059Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-16T19:16:43.060Z] [work-queue] {"queuedWork":["/myslides-db0c5/us-central1/editSlidesHttp-2026-03-16T19:16:43.060Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-16T19:16:43.060Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/myslides-db0c5/us-central1/editSlidesHttp-2026-03-16T19:16:43.060Z"],"workRunningCount":1}
+[debug] [2026-03-16T19:16:43.060Z] Accepted request POST /myslides-db0c5/us-central1/editSlidesHttp --> us-central1-editSlidesHttp
+[debug] [2026-03-16T19:16:43.062Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-03-16T19:16:43.062Z] [functions] Got req.url=/myslides-db0c5/us-central1/editSlidesHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/myslides-db0c5/us-central1/editSlidesHttp, mapping to path=/"}}
+[debug] [2026-03-16T19:16:43.062Z] [worker-pool] submitRequest(triggerId=us-central1-editSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-editSlidesHttp)"}}
+[info] i  functions: Beginning execution of "us-central1-editSlidesHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Beginning execution of \"us-central1-editSlidesHttp\""}}
+[debug] [2026-03-16T19:16:43.063Z] [worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: BUSY"}}
+[info] >  Starting slide editing using model: gpt-4o-mini {"user":"Starting slide editing using model: gpt-4o-mini","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m Starting slide editing using model: gpt-4o-mini"}}
+[debug] [2026-03-16T19:17:03.528Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-editSlidesHttp" in 20465.5785ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finished \"us-central1-editSlidesHttp\" in 20465.5785ms"}}
+[debug] [2026-03-16T19:17:03.529Z] [worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: IDLE"}}
+[debug] [2026-03-16T19:17:03.529Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-03-16T19:17:03.529Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-03-16T19:17:03.529Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-16T20:13:09.692Z] [worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-78050f86-d274-4395-83f2-780081e4d436]: exited"}}
+[debug] [2026-03-22T18:59:35.290Z] ----------------------------------------------------------------------
+[debug] [2026-03-22T18:59:35.293Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2026-03-22T18:59:35.293Z] CLI Version:   14.27.0
+[debug] [2026-03-22T18:59:35.294Z] Platform:      win32
+[debug] [2026-03-22T18:59:35.294Z] Node Version:  v22.17.0
+[debug] [2026-03-22T18:59:35.294Z] Time:          Sun Mar 22 2026 22:59:35 GMT+0400 (Gulf Standard Time)
+[debug] [2026-03-22T18:59:35.294Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-22T18:59:35.297Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2026-03-22T18:59:35.631Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-22T18:59:35.632Z] > authorizing via signed-in user (ghassanwork29@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2026-03-22T18:59:35.641Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-03-22T18:59:35.642Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-03-22T18:59:35.646Z] Emulator locator file path: C:\Users\HP\AppData\Local\Temp\hub-myslides-db0c5.json
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project myslides-db0c5. This may result in unexpected behavior. 
+[debug] [2026-03-22T18:59:35.648Z] [hub] writing locator at C:\Users\HP\AppData\Local\Temp\hub-myslides-db0c5.json
+[debug] [2026-03-22T18:59:35.670Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-03-22T18:59:35.670Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-03-22T18:59:35.670Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-03-22T18:59:35.671Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2026-03-22T18:59:35.706Z] defaultcredentials: writing to file C:\Users\HP\AppData\Roaming\firebase\ghassanwork29_gmail_com_application_default_credentials.json
+[debug] [2026-03-22T18:59:35.708Z] Setting GAC to C:\Users\HP\AppData\Roaming\firebase\ghassanwork29_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\HP\\AppData\\Roaming\\firebase\\ghassanwork29_gmail_com_application_default_credentials.json"}}
+[debug] [2026-03-22T18:59:35.708Z] Checked if tokens are valid: false, expires at: 1773691897313
+[debug] [2026-03-22T18:59:35.709Z] Checked if tokens are valid: false, expires at: 1773691897313
+[debug] [2026-03-22T18:59:35.709Z] > refreshing access token with scopes: []
+[debug] [2026-03-22T18:59:35.710Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-03-22T18:59:35.710Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-22T18:59:36.331Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-03-22T18:59:36.331Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-22T18:59:36.337Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/myslides-db0c5/adminSdkConfig [none]
+[debug] [2026-03-22T18:59:36.385Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2026-03-22T18:59:36.385Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2026-03-22T18:59:37.498Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/myslides-db0c5/adminSdkConfig 200
+[debug] [2026-03-22T18:59:37.498Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/myslides-db0c5/adminSdkConfig {"projectId":"myslides-db0c5","storageBucket":"myslides-db0c5.firebasestorage.app"}
+[info] i  functions: Watching "C:\Users\HP\Desktop\MySlides\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\HP\\Desktop\\MySlides\\functions\" for Cloud Functions..."}}
+[debug] [2026-03-22T18:59:37.528Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-03-22T18:59:39.880Z] > [functions] package.json contents: {
+  "name": "myslides-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^11.11.1",
+    "firebase-functions": "^4.5.0",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/node-fetch": "^2.6.10",
+    "typescript": "^5.3.3"
+  }
+}
+[debug] [2026-03-22T18:59:39.881Z] Building nodejs source
+[debug] [2026-03-22T18:59:39.881Z] Failed to find version of module node: reached end of search path C:\Users\HP\Desktop\MySlides\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "22". Using node@22 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: You are using a version of firebase-functions SDK (4.9.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2026-03-22T18:59:39.885Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-03-22T18:59:39.891Z] Found firebase-functions binary at 'C:\Users\HP\Desktop\MySlides\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8475
+
+[debug] [2026-03-22T18:59:40.956Z] Got response from /__/functions.yaml {"endpoints":{"generateSlides":{"platform":"gcfv1","labels":{},"availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"callableTrigger":{},"entryPoint":"generateSlides"},"generateSlidesHttp":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"httpsTrigger":{},"entryPoint":"generateSlidesHttp"},"editSlidesHttp":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"httpsTrigger":{},"entryPoint":"editSlidesHttp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: generateSlides, generateSlidesHttp, editSlidesHttp. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generateSlides, generateSlidesHttp, editSlidesHttp."}}
+[info] +  functions[us-central1-generateSlides]: http function initialized (http://127.0.0.1:5001/myslides-db0c5/us-central1/generateSlides). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/myslides-db0c5/us-central1/generateSlides)."}}
+[info] +  functions[us-central1-generateSlidesHttp]: http function initialized (http://127.0.0.1:5001/myslides-db0c5/us-central1/generateSlidesHttp). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/myslides-db0c5/us-central1/generateSlidesHttp)."}}
+[info] +  functions[us-central1-editSlidesHttp]: http function initialized (http://127.0.0.1:5001/myslides-db0c5/us-central1/editSlidesHttp). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/myslides-db0c5/us-central1/editSlidesHttp)."}}
+[debug] [2026-03-22T18:59:45.002Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2026-03-22T19:00:27.913Z] File C:\Users\HP\Desktop\MySlides\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HP\\Desktop\\MySlides\\functions\\package.json changed, reloading triggers"}}
+[debug] [2026-03-22T19:00:28.918Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-03-22T19:00:30.538Z] > [functions] package.json contents: {
+  "name": "myslides-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "dev": "npm run serve",
+    "shell": "npm run build && firebase functions:shell",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^11.11.1",
+    "firebase-functions": "^4.5.0",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/node-fetch": "^2.6.10",
+    "typescript": "^5.3.3"
+  }
+}
+[debug] [2026-03-22T19:00:30.538Z] Building nodejs source
+[debug] [2026-03-22T19:00:30.539Z] Failed to find version of module node: reached end of search path C:\Users\HP\Desktop\MySlides\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "22". Using node@22 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: You are using a version of firebase-functions SDK (4.9.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2026-03-22T19:00:30.541Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-03-22T19:00:30.547Z] Found firebase-functions binary at 'C:\Users\HP\Desktop\MySlides\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8658
+
+[debug] [2026-03-22T19:00:31.268Z] Got response from /__/functions.yaml {"endpoints":{"generateSlides":{"platform":"gcfv1","labels":{},"availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"callableTrigger":{},"entryPoint":"generateSlides"},"generateSlidesHttp":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"httpsTrigger":{},"entryPoint":"generateSlidesHttp"},"editSlidesHttp":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"httpsTrigger":{},"entryPoint":"editSlidesHttp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: generateSlides, generateSlidesHttp, editSlidesHttp. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generateSlides, generateSlidesHttp, editSlidesHttp."}}
+[debug] [2026-03-22T19:03:54.356Z] [work-queue] {"queuedWork":["/myslides-db0c5/us-central1/generateSlidesHttp-2026-03-22T19:03:54.356Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-22T19:03:54.356Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/myslides-db0c5/us-central1/generateSlidesHttp-2026-03-22T19:03:54.356Z"],"workRunningCount":1}
+[debug] [2026-03-22T19:03:54.356Z] Accepted request OPTIONS /myslides-db0c5/us-central1/generateSlidesHttp --> us-central1-generateSlidesHttp
+[debug] [2026-03-22T19:03:54.359Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-03-22T19:03:54.359Z] [functions] Got req.url=/myslides-db0c5/us-central1/generateSlidesHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/myslides-db0c5/us-central1/generateSlidesHttp, mapping to path=/"}}
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: Trying to access secret OPENAI_API_KEY@latest {"metadata":{"emulator":{"name":"functions"},"message":"Trying to access secret OPENAI_API_KEY@latest"}}
+[debug] [2026-03-22T19:03:54.363Z] Checked if tokens are valid: true, expires at: 1774209575331
+[debug] [2026-03-22T19:03:54.363Z] Checked if tokens are valid: true, expires at: 1774209575331
+[debug] [2026-03-22T19:03:54.363Z] >>> [apiv2][query] GET https://secretmanager.googleapis.com/v1/projects/myslides-db0c5/secrets/OPENAI_API_KEY/versions/latest:access [none]
+[debug] [2026-03-22T19:03:56.116Z] <<< [apiv2][status] GET https://secretmanager.googleapis.com/v1/projects/myslides-db0c5/secrets/OPENAI_API_KEY/versions/latest:access 200
+[debug] [2026-03-22T19:03:56.116Z] <<< [apiv2][body] GET https://secretmanager.googleapis.com/v1/projects/myslides-db0c5/secrets/OPENAI_API_KEY/versions/latest:access {"name":"projects/476005135868/secrets/OPENAI_API_KEY/versions/2","payload":{"data":"c2stc3ZjYWNjdC1HTHlNWkhTdTVsaXoxZFVDWXlYcGVDTldrckVmYUhTVkgxWS1RcmFkZGtyUnJHRE9Pb3JVZTNFOWhWaHduMWV1MkNMcE0wWklwNlQzQmxia0ZKYXhQdjNyNEZ2MXhJcG9PY0tqUUJqZ21TaXVPTVVHQnZ3OU54TW5FZmI3VGhxblFzeXBmdjNiNHVnQW9qaFQzc3VEazhYSE9QSUE=","dataCrc32c":"620410149"}}
+[debug] [2026-03-22T19:03:56.126Z] [worker-pool] addWorker(us-central1-generateSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-generateSlidesHttp)"}}
+[debug] [2026-03-22T19:03:56.127Z] [worker-pool] Adding worker with key us-central1-generateSlidesHttp, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-generateSlidesHttp, total=1"}}
+[debug] [2026-03-22T19:03:57.418Z] [runtime-status] [6140] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [6140] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2026-03-22T19:03:57.419Z] [runtime-status] [6140] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [6140] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2026-03-22T19:03:57.420Z] [runtime-status] [6140] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [6140] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2026-03-22T19:03:57.421Z] [runtime-status] [6140] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [6140] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2026-03-22T19:03:57.762Z] [runtime-status] [6140] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [6140] Checked functions.config() {\"config\":{}}"}}
+[debug] [2026-03-22T19:03:57.762Z] [runtime-status] [6140] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [6140] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2026-03-22T19:03:57.763Z] [runtime-status] [6140] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [6140] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2026-03-22T19:03:57.765Z] [runtime-status] [6140] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [6140] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2026-03-22T19:03:57.768Z] [runtime-status] [6140] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [6140] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2026-03-22T19:03:57.769Z] [runtime-status] [6140] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [6140] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2026-03-22T19:03:57.889Z] [runtime-status] [6140] initializeApp(DEFAULT) {"storageBucket":"myslides-db0c5.firebasestorage.app","projectId":"myslides-db0c5"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [6140] initializeApp(DEFAULT) {\"storageBucket\":\"myslides-db0c5.firebasestorage.app\",\"projectId\":\"myslides-db0c5\"}"}}
+[debug] [2026-03-22T19:03:57.896Z] [runtime-status] [6140] Functions runtime initialized. {"cwd":"C:\\Users\\HP\\Desktop\\MySlides\\functions","node_version":"22.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [6140] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\",\"node_version\":\"22.17.0\"}"}}
+[debug] [2026-03-22T19:03:57.897Z] [runtime-status] [6140] Listening to port: \\?\pipe\fire_emu_f05c9787fd13334b {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [6140] Listening to port: \\\\?\\pipe\\fire_emu_f05c9787fd13334b"}}
+[debug] [2026-03-22T19:03:57.985Z] [worker-us-central1-generateSlidesHttp-a9a95796-5165-4832-b39a-695a7cedcaca]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[worker-us-central1-generateSlidesHttp-a9a95796-5165-4832-b39a-695a7cedcaca]: IDLE"}}
+[debug] [2026-03-22T19:03:57.985Z] [worker-pool] submitRequest(triggerId=us-central1-generateSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-generateSlidesHttp)"}}
+[info] i  functions: Beginning execution of "us-central1-generateSlidesHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Beginning execution of \"us-central1-generateSlidesHttp\""}}
+[debug] [2026-03-22T19:03:57.986Z] [worker-us-central1-generateSlidesHttp-a9a95796-5165-4832-b39a-695a7cedcaca]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[worker-us-central1-generateSlidesHttp-a9a95796-5165-4832-b39a-695a7cedcaca]: BUSY"}}
+[debug] [2026-03-22T19:03:57.991Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-generateSlidesHttp" in 4.9303ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Finished \"us-central1-generateSlidesHttp\" in 4.9303ms"}}
+[debug] [2026-03-22T19:03:57.991Z] [worker-us-central1-generateSlidesHttp-a9a95796-5165-4832-b39a-695a7cedcaca]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[worker-us-central1-generateSlidesHttp-a9a95796-5165-4832-b39a-695a7cedcaca]: IDLE"}}
+[debug] [2026-03-22T19:03:57.991Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-03-22T19:03:57.992Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-03-22T19:03:57.992Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-22T19:03:57.993Z] [work-queue] {"queuedWork":["/myslides-db0c5/us-central1/generateSlidesHttp-2026-03-22T19:03:57.993Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-22T19:03:57.993Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/myslides-db0c5/us-central1/generateSlidesHttp-2026-03-22T19:03:57.993Z"],"workRunningCount":1}
+[debug] [2026-03-22T19:03:57.993Z] Accepted request POST /myslides-db0c5/us-central1/generateSlidesHttp --> us-central1-generateSlidesHttp
+[debug] [2026-03-22T19:03:57.994Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-03-22T19:03:57.994Z] [functions] Got req.url=/myslides-db0c5/us-central1/generateSlidesHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/myslides-db0c5/us-central1/generateSlidesHttp, mapping to path=/"}}
+[debug] [2026-03-22T19:03:57.994Z] [worker-pool] submitRequest(triggerId=us-central1-generateSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-generateSlidesHttp)"}}
+[info] i  functions: Beginning execution of "us-central1-generateSlidesHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Beginning execution of \"us-central1-generateSlidesHttp\""}}
+[debug] [2026-03-22T19:03:57.995Z] [worker-us-central1-generateSlidesHttp-a9a95796-5165-4832-b39a-695a7cedcaca]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[worker-us-central1-generateSlidesHttp-a9a95796-5165-4832-b39a-695a7cedcaca]: BUSY"}}
+[warn] !  functions: The Firebase Authentication emulator is not running, so calls to Firebase Authentication will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"The Firebase Authentication emulator is not running, so calls to Firebase Authentication will affect production."}}
+[info] >  Starting slide generation using model: gpt-4o-mini {"user":"Starting slide generation using model: gpt-4o-mini","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m Starting slide generation using model: gpt-4o-mini"}}
+[warn] !  External network resource requested!
+   - URL: "https://api.openai.com/v1/chat/completions"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://api.openai.com/v1/chat/completions\"\n - Be careful, this may be a production service."}}
+[debug] [2026-03-22T19:04:24.687Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-generateSlidesHttp" in 26692.5672ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Finished \"us-central1-generateSlidesHttp\" in 26692.5672ms"}}
+[debug] [2026-03-22T19:04:24.688Z] [worker-us-central1-generateSlidesHttp-a9a95796-5165-4832-b39a-695a7cedcaca]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[worker-us-central1-generateSlidesHttp-a9a95796-5165-4832-b39a-695a7cedcaca]: IDLE"}}
+[debug] [2026-03-22T19:04:24.688Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-03-22T19:04:24.688Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-03-22T19:04:24.688Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-22T19:06:36.404Z] [work-queue] {"queuedWork":["/myslides-db0c5/us-central1/editSlidesHttp-2026-03-22T19:06:36.404Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-22T19:06:36.405Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/myslides-db0c5/us-central1/editSlidesHttp-2026-03-22T19:06:36.404Z"],"workRunningCount":1}
+[debug] [2026-03-22T19:06:36.405Z] Accepted request OPTIONS /myslides-db0c5/us-central1/editSlidesHttp --> us-central1-editSlidesHttp
+[debug] [2026-03-22T19:06:36.407Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-03-22T19:06:36.407Z] [functions] Got req.url=/myslides-db0c5/us-central1/editSlidesHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/myslides-db0c5/us-central1/editSlidesHttp, mapping to path=/"}}
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: Trying to access secret OPENAI_API_KEY@latest {"metadata":{"emulator":{"name":"functions"},"message":"Trying to access secret OPENAI_API_KEY@latest"}}
+[debug] [2026-03-22T19:06:36.409Z] Checked if tokens are valid: true, expires at: 1774209575331
+[debug] [2026-03-22T19:06:36.409Z] Checked if tokens are valid: true, expires at: 1774209575331
+[debug] [2026-03-22T19:06:36.409Z] >>> [apiv2][query] GET https://secretmanager.googleapis.com/v1/projects/myslides-db0c5/secrets/OPENAI_API_KEY/versions/latest:access [none]
+[debug] [2026-03-22T19:06:37.806Z] <<< [apiv2][status] GET https://secretmanager.googleapis.com/v1/projects/myslides-db0c5/secrets/OPENAI_API_KEY/versions/latest:access 200
+[debug] [2026-03-22T19:06:37.806Z] <<< [apiv2][body] GET https://secretmanager.googleapis.com/v1/projects/myslides-db0c5/secrets/OPENAI_API_KEY/versions/latest:access {"name":"projects/476005135868/secrets/OPENAI_API_KEY/versions/2","payload":{"data":"c2stc3ZjYWNjdC1HTHlNWkhTdTVsaXoxZFVDWXlYcGVDTldrckVmYUhTVkgxWS1RcmFkZGtyUnJHRE9Pb3JVZTNFOWhWaHduMWV1MkNMcE0wWklwNlQzQmxia0ZKYXhQdjNyNEZ2MXhJcG9PY0tqUUJqZ21TaXVPTVVHQnZ3OU54TW5FZmI3VGhxblFzeXBmdjNiNHVnQW9qaFQzc3VEazhYSE9QSUE=","dataCrc32c":"620410149"}}
+[debug] [2026-03-22T19:06:37.810Z] [worker-pool] addWorker(us-central1-editSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-editSlidesHttp)"}}
+[debug] [2026-03-22T19:06:37.811Z] [worker-pool] Adding worker with key us-central1-editSlidesHttp, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-editSlidesHttp, total=1"}}
+[debug] [2026-03-22T19:06:39.070Z] [runtime-status] [8940] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [8940] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2026-03-22T19:06:39.071Z] [runtime-status] [8940] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [8940] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2026-03-22T19:06:39.072Z] [runtime-status] [8940] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [8940] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2026-03-22T19:06:39.072Z] [runtime-status] [8940] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [8940] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2026-03-22T19:06:39.397Z] [runtime-status] [8940] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [8940] Checked functions.config() {\"config\":{}}"}}
+[debug] [2026-03-22T19:06:39.397Z] [runtime-status] [8940] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [8940] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2026-03-22T19:06:39.398Z] [runtime-status] [8940] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [8940] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2026-03-22T19:06:39.399Z] [runtime-status] [8940] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [8940] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2026-03-22T19:06:39.402Z] [runtime-status] [8940] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [8940] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2026-03-22T19:06:39.402Z] [runtime-status] [8940] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [8940] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2026-03-22T19:06:39.517Z] [runtime-status] [8940] initializeApp(DEFAULT) {"storageBucket":"myslides-db0c5.firebasestorage.app","projectId":"myslides-db0c5"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [8940] initializeApp(DEFAULT) {\"storageBucket\":\"myslides-db0c5.firebasestorage.app\",\"projectId\":\"myslides-db0c5\"}"}}
+[debug] [2026-03-22T19:06:39.525Z] [runtime-status] [8940] Functions runtime initialized. {"cwd":"C:\\Users\\HP\\Desktop\\MySlides\\functions","node_version":"22.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [8940] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\",\"node_version\":\"22.17.0\"}"}}
+[debug] [2026-03-22T19:06:39.525Z] [runtime-status] [8940] Listening to port: \\?\pipe\fire_emu_ee2fd9cb5613ffa1 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[runtime-status] [8940] Listening to port: \\\\?\\pipe\\fire_emu_ee2fd9cb5613ffa1"}}
+[debug] [2026-03-22T19:06:39.564Z] [worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: IDLE"}}
+[debug] [2026-03-22T19:06:39.565Z] [worker-pool] submitRequest(triggerId=us-central1-editSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-editSlidesHttp)"}}
+[info] i  functions: Beginning execution of "us-central1-editSlidesHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Beginning execution of \"us-central1-editSlidesHttp\""}}
+[debug] [2026-03-22T19:06:39.565Z] [worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: BUSY"}}
+[debug] [2026-03-22T19:06:39.568Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-editSlidesHttp" in 3.5408ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finished \"us-central1-editSlidesHttp\" in 3.5408ms"}}
+[debug] [2026-03-22T19:06:39.569Z] [worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: IDLE"}}
+[debug] [2026-03-22T19:06:39.569Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-03-22T19:06:39.569Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-03-22T19:06:39.569Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-22T19:06:39.570Z] [work-queue] {"queuedWork":["/myslides-db0c5/us-central1/editSlidesHttp-2026-03-22T19:06:39.570Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-22T19:06:39.570Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/myslides-db0c5/us-central1/editSlidesHttp-2026-03-22T19:06:39.570Z"],"workRunningCount":1}
+[debug] [2026-03-22T19:06:39.570Z] Accepted request POST /myslides-db0c5/us-central1/editSlidesHttp --> us-central1-editSlidesHttp
+[debug] [2026-03-22T19:06:39.570Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-03-22T19:06:39.571Z] [functions] Got req.url=/myslides-db0c5/us-central1/editSlidesHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/myslides-db0c5/us-central1/editSlidesHttp, mapping to path=/"}}
+[debug] [2026-03-22T19:06:39.571Z] [worker-pool] submitRequest(triggerId=us-central1-editSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-editSlidesHttp)"}}
+[info] i  functions: Beginning execution of "us-central1-editSlidesHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Beginning execution of \"us-central1-editSlidesHttp\""}}
+[debug] [2026-03-22T19:06:39.571Z] [worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: BUSY"}}
+[info] >  Starting slide editing using model: gpt-4o-mini {"user":"Starting slide editing using model: gpt-4o-mini","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m Starting slide editing using model: gpt-4o-mini"}}
+[warn] !  External network resource requested!
+   - URL: "https://api.openai.com/v1/chat/completions"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://api.openai.com/v1/chat/completions\"\n - Be careful, this may be a production service."}}
+[debug] [2026-03-22T19:07:21.500Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-editSlidesHttp" in 41928.8764ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finished \"us-central1-editSlidesHttp\" in 41928.8764ms"}}
+[debug] [2026-03-22T19:07:21.501Z] [worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: IDLE"}}
+[debug] [2026-03-22T19:07:21.501Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-03-22T19:07:21.501Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-03-22T19:07:21.501Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-22T19:07:55.742Z] [work-queue] {"queuedWork":["/myslides-db0c5/us-central1/editSlidesHttp-2026-03-22T19:07:55.742Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-22T19:07:55.742Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/myslides-db0c5/us-central1/editSlidesHttp-2026-03-22T19:07:55.742Z"],"workRunningCount":1}
+[debug] [2026-03-22T19:07:55.742Z] Accepted request OPTIONS /myslides-db0c5/us-central1/editSlidesHttp --> us-central1-editSlidesHttp
+[debug] [2026-03-22T19:07:55.744Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-03-22T19:07:55.744Z] [functions] Got req.url=/myslides-db0c5/us-central1/editSlidesHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/myslides-db0c5/us-central1/editSlidesHttp, mapping to path=/"}}
+[debug] [2026-03-22T19:07:55.744Z] [worker-pool] submitRequest(triggerId=us-central1-editSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-editSlidesHttp)"}}
+[info] i  functions: Beginning execution of "us-central1-editSlidesHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Beginning execution of \"us-central1-editSlidesHttp\""}}
+[debug] [2026-03-22T19:07:55.745Z] [worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: BUSY"}}
+[debug] [2026-03-22T19:07:55.748Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-editSlidesHttp" in 2.7102ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finished \"us-central1-editSlidesHttp\" in 2.7102ms"}}
+[debug] [2026-03-22T19:07:55.748Z] [worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: IDLE"}}
+[debug] [2026-03-22T19:07:55.748Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-03-22T19:07:55.749Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-03-22T19:07:55.749Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-22T19:07:55.749Z] [work-queue] {"queuedWork":["/myslides-db0c5/us-central1/editSlidesHttp-2026-03-22T19:07:55.749Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-22T19:07:55.749Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/myslides-db0c5/us-central1/editSlidesHttp-2026-03-22T19:07:55.749Z"],"workRunningCount":1}
+[debug] [2026-03-22T19:07:55.749Z] Accepted request POST /myslides-db0c5/us-central1/editSlidesHttp --> us-central1-editSlidesHttp
+[debug] [2026-03-22T19:07:55.751Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-03-22T19:07:55.751Z] [functions] Got req.url=/myslides-db0c5/us-central1/editSlidesHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/myslides-db0c5/us-central1/editSlidesHttp, mapping to path=/"}}
+[debug] [2026-03-22T19:07:55.752Z] [worker-pool] submitRequest(triggerId=us-central1-editSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-editSlidesHttp)"}}
+[info] i  functions: Beginning execution of "us-central1-editSlidesHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Beginning execution of \"us-central1-editSlidesHttp\""}}
+[debug] [2026-03-22T19:07:55.752Z] [worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: BUSY"}}
+[info] >  Starting slide editing using model: gpt-4o-mini {"user":"Starting slide editing using model: gpt-4o-mini","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m Starting slide editing using model: gpt-4o-mini"}}
+[debug] [2026-03-22T19:08:05.512Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-editSlidesHttp" in 9760.589899999999ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finished \"us-central1-editSlidesHttp\" in 9760.589899999999ms"}}
+[debug] [2026-03-22T19:08:05.513Z] [worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: IDLE"}}
+[debug] [2026-03-22T19:08:05.513Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-03-22T19:08:05.514Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-03-22T19:08:05.514Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-22T20:02:00.489Z] File C:\Users\HP\Desktop\MySlides\functions\src\prompts\design-engine.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HP\\Desktop\\MySlides\\functions\\src\\prompts\\design-engine.ts changed, reloading triggers"}}
+[debug] [2026-03-22T20:02:01.498Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-03-22T20:02:03.093Z] > [functions] package.json contents: {
+  "name": "myslides-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "dev": "npm run serve",
+    "shell": "npm run build && firebase functions:shell",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^11.11.1",
+    "firebase-functions": "^4.5.0",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/node-fetch": "^2.6.10",
+    "typescript": "^5.3.3"
+  }
+}
+[debug] [2026-03-22T20:02:03.093Z] Building nodejs source
+[debug] [2026-03-22T20:02:03.093Z] Failed to find version of module node: reached end of search path C:\Users\HP\Desktop\MySlides\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "22". Using node@22 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: You are using a version of firebase-functions SDK (4.9.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2026-03-22T20:02:03.097Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-03-22T20:02:03.102Z] Found firebase-functions binary at 'C:\Users\HP\Desktop\MySlides\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8237
+
+[debug] [2026-03-22T20:02:03.788Z] Got response from /__/functions.yaml {"endpoints":{"generateSlides":{"platform":"gcfv1","labels":{},"availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"callableTrigger":{},"entryPoint":"generateSlides"},"generateSlidesHttp":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"httpsTrigger":{},"entryPoint":"generateSlidesHttp"},"editSlidesHttp":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"httpsTrigger":{},"entryPoint":"editSlidesHttp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: generateSlides, generateSlidesHttp, editSlidesHttp. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generateSlides, generateSlidesHttp, editSlidesHttp."}}
+[debug] [2026-03-22T20:02:07.809Z] [worker-pool] Shutting down IDLE worker (us-central1-generateSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-generateSlidesHttp)"}}
+[debug] [2026-03-22T20:02:07.809Z] [worker-us-central1-generateSlidesHttp-a9a95796-5165-4832-b39a-695a7cedcaca]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[worker-us-central1-generateSlidesHttp-a9a95796-5165-4832-b39a-695a7cedcaca]: FINISHING"}}
+[debug] [2026-03-22T20:02:07.809Z] [worker-pool] Shutting down IDLE worker (us-central1-editSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-editSlidesHttp)"}}
+[debug] [2026-03-22T20:02:07.809Z] [worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: FINISHING"}}
+[debug] [2026-03-22T20:02:07.818Z] [worker-us-central1-generateSlidesHttp-a9a95796-5165-4832-b39a-695a7cedcaca]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[worker-us-central1-generateSlidesHttp-a9a95796-5165-4832-b39a-695a7cedcaca]: exited"}}
+[debug] [2026-03-22T20:02:07.818Z] [worker-us-central1-generateSlidesHttp-a9a95796-5165-4832-b39a-695a7cedcaca]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[worker-us-central1-generateSlidesHttp-a9a95796-5165-4832-b39a-695a7cedcaca]: FINISHED"}}
+[debug] [2026-03-22T20:02:07.818Z] [worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: exited"}}
+[debug] [2026-03-22T20:02:07.818Z] [worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-editSlidesHttp"},"extension":{},"message":"[worker-us-central1-editSlidesHttp-cf4319ae-60a1-4541-a0f8-f27fe49d1992]: FINISHED"}}
+[debug] [2026-03-22T20:03:04.580Z] File C:\Users\HP\Desktop\MySlides\functions\src\prompts\design-engine.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HP\\Desktop\\MySlides\\functions\\src\\prompts\\design-engine.ts changed, reloading triggers"}}
+[debug] [2026-03-22T20:03:05.598Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-03-22T20:03:06.682Z] > [functions] package.json contents: {
+  "name": "myslides-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "dev": "npm run serve",
+    "shell": "npm run build && firebase functions:shell",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^11.11.1",
+    "firebase-functions": "^4.5.0",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/node-fetch": "^2.6.10",
+    "typescript": "^5.3.3"
+  }
+}
+[debug] [2026-03-22T20:03:06.682Z] Building nodejs source
+[debug] [2026-03-22T20:03:06.682Z] Failed to find version of module node: reached end of search path C:\Users\HP\Desktop\MySlides\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "22". Using node@22 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: You are using a version of firebase-functions SDK (4.9.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2026-03-22T20:03:06.685Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-03-22T20:03:06.690Z] Found firebase-functions binary at 'C:\Users\HP\Desktop\MySlides\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8199
+
+[debug] [2026-03-22T20:03:07.365Z] Got response from /__/functions.yaml {"endpoints":{"generateSlides":{"platform":"gcfv1","labels":{},"availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"callableTrigger":{},"entryPoint":"generateSlides"},"generateSlidesHttp":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"httpsTrigger":{},"entryPoint":"generateSlidesHttp"},"editSlidesHttp":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"httpsTrigger":{},"entryPoint":"editSlidesHttp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: generateSlides, generateSlidesHttp, editSlidesHttp. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generateSlides, generateSlidesHttp, editSlidesHttp."}}
+[debug] [2026-03-22T20:03:27.549Z] File C:\Users\HP\Desktop\MySlides\functions\src\prompts\design-engine.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HP\\Desktop\\MySlides\\functions\\src\\prompts\\design-engine.ts changed, reloading triggers"}}
+[debug] [2026-03-22T20:03:28.564Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-03-22T20:03:29.750Z] > [functions] package.json contents: {
+  "name": "myslides-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "dev": "npm run serve",
+    "shell": "npm run build && firebase functions:shell",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^11.11.1",
+    "firebase-functions": "^4.5.0",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/node-fetch": "^2.6.10",
+    "typescript": "^5.3.3"
+  }
+}
+[debug] [2026-03-22T20:03:29.750Z] Building nodejs source
+[debug] [2026-03-22T20:03:29.750Z] Failed to find version of module node: reached end of search path C:\Users\HP\Desktop\MySlides\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "22". Using node@22 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: You are using a version of firebase-functions SDK (4.9.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2026-03-22T20:03:29.753Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-03-22T20:03:29.757Z] Found firebase-functions binary at 'C:\Users\HP\Desktop\MySlides\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8078
+
+[debug] [2026-03-22T20:03:30.414Z] Got response from /__/functions.yaml {"endpoints":{"generateSlides":{"platform":"gcfv1","labels":{},"availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"callableTrigger":{},"entryPoint":"generateSlides"},"generateSlidesHttp":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"httpsTrigger":{},"entryPoint":"generateSlidesHttp"},"editSlidesHttp":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"httpsTrigger":{},"entryPoint":"editSlidesHttp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: generateSlides, generateSlidesHttp, editSlidesHttp. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generateSlides, generateSlidesHttp, editSlidesHttp."}}
+[debug] [2026-03-22T20:03:47.575Z] File C:\Users\HP\Desktop\MySlides\functions\src\prompts\design-engine.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HP\\Desktop\\MySlides\\functions\\src\\prompts\\design-engine.ts changed, reloading triggers"}}
+[debug] [2026-03-22T20:03:48.580Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-03-22T20:03:49.712Z] > [functions] package.json contents: {
+  "name": "myslides-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "dev": "npm run serve",
+    "shell": "npm run build && firebase functions:shell",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^11.11.1",
+    "firebase-functions": "^4.5.0",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/node-fetch": "^2.6.10",
+    "typescript": "^5.3.3"
+  }
+}
+[debug] [2026-03-22T20:03:49.713Z] Building nodejs source
+[debug] [2026-03-22T20:03:49.713Z] Failed to find version of module node: reached end of search path C:\Users\HP\Desktop\MySlides\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "22". Using node@22 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: You are using a version of firebase-functions SDK (4.9.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2026-03-22T20:03:49.715Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-03-22T20:03:49.720Z] Found firebase-functions binary at 'C:\Users\HP\Desktop\MySlides\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8416
+
+[debug] [2026-03-22T20:03:50.390Z] Got response from /__/functions.yaml {"endpoints":{"generateSlides":{"platform":"gcfv1","labels":{},"availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"callableTrigger":{},"entryPoint":"generateSlides"},"generateSlidesHttp":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"httpsTrigger":{},"entryPoint":"generateSlidesHttp"},"editSlidesHttp":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"httpsTrigger":{},"entryPoint":"editSlidesHttp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: generateSlides, generateSlidesHttp, editSlidesHttp. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generateSlides, generateSlidesHttp, editSlidesHttp."}}
+[debug] [2026-03-22T20:04:17.311Z] File C:\Users\HP\Desktop\MySlides\functions\lib\prompts\design-engine.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HP\\Desktop\\MySlides\\functions\\lib\\prompts\\design-engine.js changed, reloading triggers"}}
+[debug] [2026-03-22T20:04:17.335Z] File C:\Users\HP\Desktop\MySlides\functions\lib\services\openai.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HP\\Desktop\\MySlides\\functions\\lib\\services\\openai.js changed, reloading triggers"}}
+[debug] [2026-03-22T20:04:17.350Z] File C:\Users\HP\Desktop\MySlides\functions\lib\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HP\\Desktop\\MySlides\\functions\\lib\\index.js changed, reloading triggers"}}
+[debug] [2026-03-22T20:04:17.351Z] File C:\Users\HP\Desktop\MySlides\functions\lib\slideDesignSchema.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HP\\Desktop\\MySlides\\functions\\lib\\slideDesignSchema.js changed, reloading triggers"}}
+[debug] [2026-03-22T20:04:17.365Z] File C:\Users\HP\Desktop\MySlides\functions\lib\services\constraints.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HP\\Desktop\\MySlides\\functions\\lib\\services\\constraints.js changed, reloading triggers"}}
+[debug] [2026-03-22T20:04:18.372Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-03-22T20:04:19.425Z] > [functions] package.json contents: {
+  "name": "myslides-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "dev": "npm run serve",
+    "shell": "npm run build && firebase functions:shell",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^11.11.1",
+    "firebase-functions": "^4.5.0",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/node-fetch": "^2.6.10",
+    "typescript": "^5.3.3"
+  }
+}
+[debug] [2026-03-22T20:04:19.425Z] Building nodejs source
+[debug] [2026-03-22T20:04:19.426Z] Failed to find version of module node: reached end of search path C:\Users\HP\Desktop\MySlides\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "22". Using node@22 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: You are using a version of firebase-functions SDK (4.9.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2026-03-22T20:04:19.427Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-03-22T20:04:19.432Z] Found firebase-functions binary at 'C:\Users\HP\Desktop\MySlides\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8853
+
+[debug] [2026-03-22T20:04:20.095Z] Got response from /__/functions.yaml {"endpoints":{"generateSlides":{"platform":"gcfv1","labels":{},"availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"callableTrigger":{},"entryPoint":"generateSlides"},"generateSlidesHttp":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"httpsTrigger":{},"entryPoint":"generateSlidesHttp"},"editSlidesHttp":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"region":["us-central1"],"secretEnvironmentVariables":[{"key":"OPENAI_API_KEY"}],"httpsTrigger":{},"entryPoint":"editSlidesHttp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: generateSlides, generateSlidesHttp, editSlidesHttp. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generateSlides, generateSlidesHttp, editSlidesHttp."}}
+[debug] [2026-03-22T20:09:31.708Z] [work-queue] {"queuedWork":["/myslides-db0c5/us-central1/generateSlidesHttp-2026-03-22T20:09:31.708Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-22T20:09:31.708Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/myslides-db0c5/us-central1/generateSlidesHttp-2026-03-22T20:09:31.708Z"],"workRunningCount":1}
+[debug] [2026-03-22T20:09:31.709Z] Accepted request OPTIONS /myslides-db0c5/us-central1/generateSlidesHttp --> us-central1-generateSlidesHttp
+[debug] [2026-03-22T20:09:31.711Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-03-22T20:09:31.711Z] [functions] Got req.url=/myslides-db0c5/us-central1/generateSlidesHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/myslides-db0c5/us-central1/generateSlidesHttp, mapping to path=/"}}
+[debug] [2026-03-22T20:09:31.711Z] [worker-pool] Cleaned up workers for us-central1-generateSlidesHttp: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-generateSlidesHttp: 1 --> 0"}}
+[debug] [2026-03-22T20:09:31.711Z] [worker-pool] Cleaned up workers for us-central1-editSlidesHttp: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-editSlidesHttp: 1 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: Trying to access secret OPENAI_API_KEY@latest {"metadata":{"emulator":{"name":"functions"},"message":"Trying to access secret OPENAI_API_KEY@latest"}}
+[debug] [2026-03-22T20:09:31.714Z] Checked if tokens are valid: false, expires at: 1774209575331
+[debug] [2026-03-22T20:09:31.714Z] Checked if tokens are valid: false, expires at: 1774209575331
+[debug] [2026-03-22T20:09:31.714Z] > refreshing access token with scopes: []
+[debug] [2026-03-22T20:09:31.715Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-03-22T20:09:31.715Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-22T20:09:32.244Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-03-22T20:09:32.244Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-22T20:09:32.253Z] >>> [apiv2][query] GET https://secretmanager.googleapis.com/v1/projects/myslides-db0c5/secrets/OPENAI_API_KEY/versions/latest:access [none]
+[debug] [2026-03-22T20:09:33.843Z] <<< [apiv2][status] GET https://secretmanager.googleapis.com/v1/projects/myslides-db0c5/secrets/OPENAI_API_KEY/versions/latest:access 200
+[debug] [2026-03-22T20:09:33.843Z] <<< [apiv2][body] GET https://secretmanager.googleapis.com/v1/projects/myslides-db0c5/secrets/OPENAI_API_KEY/versions/latest:access {"name":"projects/476005135868/secrets/OPENAI_API_KEY/versions/2","payload":{"data":"c2stc3ZjYWNjdC1HTHlNWkhTdTVsaXoxZFVDWXlYcGVDTldrckVmYUhTVkgxWS1RcmFkZGtyUnJHRE9Pb3JVZTNFOWhWaHduMWV1MkNMcE0wWklwNlQzQmxia0ZKYXhQdjNyNEZ2MXhJcG9PY0tqUUJqZ21TaXVPTVVHQnZ3OU54TW5FZmI3VGhxblFzeXBmdjNiNHVnQW9qaFQzc3VEazhYSE9QSUE=","dataCrc32c":"620410149"}}
+[debug] [2026-03-22T20:09:33.856Z] [worker-pool] addWorker(us-central1-generateSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-generateSlidesHttp)"}}
+[debug] [2026-03-22T20:09:33.856Z] [worker-pool] Adding worker with key us-central1-generateSlidesHttp, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-generateSlidesHttp, total=1"}}
+[debug] [2026-03-22T20:09:35.187Z] [runtime-status] [2436] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [2436] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2026-03-22T20:09:35.189Z] [runtime-status] [2436] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [2436] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2026-03-22T20:09:35.189Z] [runtime-status] [2436] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [2436] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2026-03-22T20:09:35.190Z] [runtime-status] [2436] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [2436] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2026-03-22T20:09:35.502Z] [runtime-status] [2436] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [2436] Checked functions.config() {\"config\":{}}"}}
+[debug] [2026-03-22T20:09:35.502Z] [runtime-status] [2436] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [2436] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2026-03-22T20:09:35.503Z] [runtime-status] [2436] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [2436] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2026-03-22T20:09:35.505Z] [runtime-status] [2436] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [2436] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2026-03-22T20:09:35.507Z] [runtime-status] [2436] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [2436] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2026-03-22T20:09:35.507Z] [runtime-status] [2436] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\HP\\Desktop\\MySlides\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [2436] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2026-03-22T20:09:35.624Z] [runtime-status] [2436] initializeApp(DEFAULT) {"storageBucket":"myslides-db0c5.firebasestorage.app","projectId":"myslides-db0c5"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [2436] initializeApp(DEFAULT) {\"storageBucket\":\"myslides-db0c5.firebasestorage.app\",\"projectId\":\"myslides-db0c5\"}"}}
+[debug] [2026-03-22T20:09:35.631Z] [runtime-status] [2436] Functions runtime initialized. {"cwd":"C:\\Users\\HP\\Desktop\\MySlides\\functions","node_version":"22.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [2436] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\HP\\\\Desktop\\\\MySlides\\\\functions\",\"node_version\":\"22.17.0\"}"}}
+[debug] [2026-03-22T20:09:35.631Z] [runtime-status] [2436] Listening to port: \\?\pipe\fire_emu_da8e177d073cfda5 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[runtime-status] [2436] Listening to port: \\\\?\\pipe\\fire_emu_da8e177d073cfda5"}}
+[debug] [2026-03-22T20:09:35.655Z] [worker-us-central1-generateSlidesHttp-d4d626d7-55c4-4d14-9c3d-17391ae2cdbf]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[worker-us-central1-generateSlidesHttp-d4d626d7-55c4-4d14-9c3d-17391ae2cdbf]: IDLE"}}
+[debug] [2026-03-22T20:09:35.655Z] [worker-pool] submitRequest(triggerId=us-central1-generateSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-generateSlidesHttp)"}}
+[info] i  functions: Beginning execution of "us-central1-generateSlidesHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Beginning execution of \"us-central1-generateSlidesHttp\""}}
+[debug] [2026-03-22T20:09:35.656Z] [worker-us-central1-generateSlidesHttp-d4d626d7-55c4-4d14-9c3d-17391ae2cdbf]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[worker-us-central1-generateSlidesHttp-d4d626d7-55c4-4d14-9c3d-17391ae2cdbf]: BUSY"}}
+[debug] [2026-03-22T20:09:35.659Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-generateSlidesHttp" in 3.3017ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Finished \"us-central1-generateSlidesHttp\" in 3.3017ms"}}
+[debug] [2026-03-22T20:09:35.659Z] [worker-us-central1-generateSlidesHttp-d4d626d7-55c4-4d14-9c3d-17391ae2cdbf]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[worker-us-central1-generateSlidesHttp-d4d626d7-55c4-4d14-9c3d-17391ae2cdbf]: IDLE"}}
+[debug] [2026-03-22T20:09:35.659Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-03-22T20:09:35.659Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-03-22T20:09:35.659Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-22T20:09:35.660Z] [work-queue] {"queuedWork":["/myslides-db0c5/us-central1/generateSlidesHttp-2026-03-22T20:09:35.660Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-22T20:09:35.660Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/myslides-db0c5/us-central1/generateSlidesHttp-2026-03-22T20:09:35.660Z"],"workRunningCount":1}
+[debug] [2026-03-22T20:09:35.660Z] Accepted request POST /myslides-db0c5/us-central1/generateSlidesHttp --> us-central1-generateSlidesHttp
+[debug] [2026-03-22T20:09:35.660Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-03-22T20:09:35.661Z] [functions] Got req.url=/myslides-db0c5/us-central1/generateSlidesHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/myslides-db0c5/us-central1/generateSlidesHttp, mapping to path=/"}}
+[debug] [2026-03-22T20:09:35.661Z] [worker-pool] submitRequest(triggerId=us-central1-generateSlidesHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-generateSlidesHttp)"}}
+[info] i  functions: Beginning execution of "us-central1-generateSlidesHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Beginning execution of \"us-central1-generateSlidesHttp\""}}
+[debug] [2026-03-22T20:09:35.661Z] [worker-us-central1-generateSlidesHttp-d4d626d7-55c4-4d14-9c3d-17391ae2cdbf]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[worker-us-central1-generateSlidesHttp-d4d626d7-55c4-4d14-9c3d-17391ae2cdbf]: BUSY"}}
+[info] >  Starting slide generation using model: claude-3-5-sonnet-20240620 {"user":"Starting slide generation using model: claude-3-5-sonnet-20240620","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m Starting slide generation using model: claude-3-5-sonnet-20240620"}}
+[warn] !  External network resource requested!
+   - URL: "https://api.openai.com/v1/chat/completions"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://api.openai.com/v1/chat/completions\"\n - Be careful, this may be a production service."}}
+[debug] [2026-03-22T20:10:11.514Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-generateSlidesHttp" in 35853.5764ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Finished \"us-central1-generateSlidesHttp\" in 35853.5764ms"}}
+[debug] [2026-03-22T20:10:11.515Z] [worker-us-central1-generateSlidesHttp-d4d626d7-55c4-4d14-9c3d-17391ae2cdbf]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"[worker-us-central1-generateSlidesHttp-d4d626d7-55c4-4d14-9c3d-17391ae2cdbf]: IDLE"}}
+[debug] [2026-03-22T20:10:11.515Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-03-22T20:10:11.516Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generateSlidesHttp"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-03-22T20:10:11.516Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-03-22T20:19:46.173Z] Received signal SIGHUP 1
